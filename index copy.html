@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head profile="">
+<meta charset="UTF-4">
+<link rel="stylesheet" type="text/css" href="styleindex.css">
+<script src="js.js"></script>
+<title>Swmarly</title>
+<link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+
+<body style="font-family:arial">
+<header>
+	<a href="#" class="logo">SWMARLY</a>
+	<ul>
+		<li><a href="#" class="active">Main</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Work</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+	</header>
+	<section>
+	<img src="stars.png" alt="/" id="stars">
+	<img src="moon.png" alt="/" id="moon">
+	<img src="mountains_behind.png" alt="/" id="mountains_behind">
+	<h2 id="text">Moon Light</h2>
+	<a href="#sec" id="btn">Explore</a>
+		<img src="mountains_front.png" alt="/" id="mountains_front">
+	</section>
+	<div class="sec" id="sec">
+	<h2>Parallax Scrolling Effects</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue cursus mi vitae maximus. Morbi lobortis tellus semper tellus ornare rhoncus. Nam ultricies eros diam, eget maximus nunc elementum in. Donec sit amet pharetra nulla. Phasellus eros dui, porta non urna non, luctus iaculis tellus. Vivamus mattis nec eros ac feugiat. Nam euismod venenatis auctor. In nec magna quis lorem rhoncus tincidunt. Donec fermentum arcu nec enim tristique, non egestas libero volutpat. Donec ex nibh, pretium sit amet mollis vitae, facilisis quis leo. Nulla at ultrices dui, eget maximus mauris. In vulputate, nunc at luctus laoreet, sem urna consectetur mi, condimentum commodo erat dui sed risus.<br><br>Morbi sagittis fermentum rhoncus. Pellentesque quis sem consectetur, condimentum felis in, mollis orci. Maecenas malesuada libero sed feugiat rutrum. Vivamus id purus sed ligula hendrerit egestas. Vivamus quis risus faucibus, dictum libero ac, finibus est. Suspendisse a urna sit amet justo ultricies dapibus at eget ante. Duis diam justo, pretium et augue eu, rutrum pretium ex. Nulla venenatis facilisis magna, eget sagittis nunc malesuada ut. Sed id facilisis dui. Quisque ullamcorper non odio sit amet luctus. Duis vitae nulla ornare, imperdiet nunc vel, maximus turpis.<br><br>Morbi magna massa, rutrum in pretium eu, tincidunt ac dui. Sed ultrices felis sed lobortis vehicula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac massa cursus, convallis massa at, vehicula sem. Proin interdum ut sem sed vestibulum. Donec tristique venenatis lobortis. Curabitur malesuada vitae odio eu ullamcorper. Morbi malesuada orci dui, ut mattis libero rutrum et. Donec lacinia gravida purus, scelerisque lacinia sapien rhoncus quis. Duis suscipit leo ut accumsan accumsan. Nullam ullamcorper, nisl et semper maximus, ex est aliquet neque, et lobortis velit dolor in purus. Nulla pretium ipsum ac neque tristique fermentum. Donec consequat lobortis pharetra. Suspendisse tristique, odio ac ultrices lacinia, dui turpis vehicula nulla, quis eleifend augue ex ut lorem. Nam justo lectus, pulvinar in fringilla ac, tincidunt non orci. Quisque sodales odio mattis, ullamcorper dui ac, venenatis quam.<br><br>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sollicitudin odio dui, id consequat neque venenatis at. Nulla facilisi. Donec sit amet posuere augue. Mauris sed felis mollis, sagittis nisi in, elementum metus. Maecenas imperdiet nibh felis, sed varius lacus porta nec. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eu lorem aliquet, convallis tellus at, congue odio. Donec elementum fermentum diam nec vestibulum. Cras volutpat orci eget magna gravida, quis posuere ante semper. Cras sit amet sapien tristique, iaculis sem nec, pellentesque est. Mauris posuere et justo a ullamcorper. Nam at imperdiet ipsum, ac gravida massa.</p>
+	</div>
+
+<script>
+	let stars = document.getElementById('stars');
+	let moon = document.getElementById('moon');
+	let mountains_behind = document.getElementById('mountains_behind');
+	let text = document.getElementById('text');
+	let btn = document.getElementById('btn');
+	let mountains_front = document.getElementById('mountains_front');
+	let header = document.querySelector('header');
+	
+	window.addEventListener('scroll',function(){
+		let value = window.scrollY;
+		stars.style.left = value * 0.25 + 'px';
+		moon.style.top = value * 1.05 + 'px';
+		mountains_behind.style.top = value * 0.5 + 'px';
+		mountains_front.style.top = value * 0 + 'px';
+		text.style.marginRight = value * 4 + 'px';
+		text.style.marginTop = value * 1.2 + 'px';
+		btn.style.marginTop = value * 2.5 + 'px';
+		header.style.top = value * 0.5 + 'px';
+	})
+</script>
+</body>
+</html>

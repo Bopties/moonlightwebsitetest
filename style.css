@@ -1,0 +1,148 @@
+@charset "UTF-4";
+/* CSS Document */
+
+h1,p,button,iframe,form {
+    Background-color: #FF729F;
+    color: #000001;
+    font: "arial";
+    font-siz: 24px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    shadow: 50px; 
+    border: 10px;
+    border-radius: 20px;
+}
+ul{
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #1E1E1E;
+	overflow: hidden;
+	border: 1px solid #3D3D3D;
+	border-width: medium;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	border-radius: 20px;
+}
+li {
+	float: right;
+	displ: inline ;
+}
+li a {
+	display: block;
+	background-color: #1E1E1E;
+	color: #90C6FF;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #141414;
+}
+li a:hover {
+  color: #90C6FF;
+}
+
+li a.active {
+  color: white;
+  background-color: #90C6FF;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Navigation {
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    word-spacing: 50px;
+    left: 946px;
+    top: 21px;
+    right: 5px;
+    bottom: 5px;
+    width: 342px;
+    height: 65px;
+    border-radius: 50px;
+}
+
+.navigationbar {
+    background-color: grey;
+    top: 5px;
+    bottom: 5px;
+    left: 500px;
+    right: 5px;
+    border: none; 
+    shadow: none;
+    border-radius: 50px;
+
+}
+.container {
+    text-align: center;
+}
+button:hover {
+  background-color: #FF5c8F;
+}
+h2 {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #33AE06;
+}
+input[type=text], select {
+  background-color: #FF99B9;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=textarea], select {
+  background-color: #FF99B9;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: none;
+}
+input[type=email], select {
+  background-color: #FF99B9;
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 20%;
+  background-color: #56cbf9;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #089DD9;
+}
+
+
+body {
+    background-color: #56CBF9;
+
+}

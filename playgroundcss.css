@@ -1,0 +1,194 @@
+@charset "UTF-4";
+/* CSS Document */
+
+ul{
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #1E1E1E;
+	overflow: hidden;
+	border: 1px solid #3D3D3D;
+	border-width: medium;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	border-radius: 20px;
+}
+li {
+	float: right;
+	displ: inline ;
+}
+li a {
+	display: block;
+	background-color: #1E1E1E;
+	color: #90C6FF;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #141414;
+}
+li a:hover {
+  color: #90C6FF;
+}
+
+li a.active {
+  color: white;
+  background-color: #90C6FF;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Navigation {
+    text-align: center;
+    font-size: 19px;
+    color: white;
+    position: absolute;
+    word-spacing: 50px;
+    left: 946px;
+    top: 21px;
+    right: 5px;
+    bottom: 5px;
+    width: 342px;
+    height: 65px;
+    border-radius: 50px;
+}
+
+.navigationbar {
+    background-color: grey;
+    top: 5px;
+    bottom: 5px;
+    left: 500px;
+    right: 5px;
+    border: none; 
+    shadow: none;
+    border-radius: 50px;
+
+}
+.container {
+    text-align: center;
+}
+button:hover {
+  background-color: #FF5c8F;
+}
+body {
+    background-color: #56CBF9;
+
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
